@@ -130,6 +130,7 @@ It is only used in order to run HBase that allows us to create a database for th
 Finally, to set up HBase, create a `data\` folder in the directory with a `hbase\` and a `zookeeper\` folder. The HBASE_HOME environment variable is set to `C:\twitter\hbase-2.2.5`. Then, apply the following modifications to the configuration files.
 
 In `.\bin\hbase.cmd`
+
 *Delete %HEAP_SETTINGS% in `set java_arguments` line*
 
 In `.\conf\hbase-env.cmd`
