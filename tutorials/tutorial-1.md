@@ -50,3 +50,59 @@ bin/kafka-server-start.sh config/server.properties
 ~~~
 
 Zookeeper is a server for highly reliable distributed coordination of applications to be able for Kafka to manage different feeds of data which is the case in the project.
+
+## Hadoop
+
+The HADOOP_HOME environment variable should be set to point to `C:\twitter\hadoop-3.1.0` and added with `bin\` to the Path and the HADOOP_CONF_DIR variable set to `C:\twitter\hadoop-3.1.0\etc\hadoop`. Create in the directory a `data\` folder containing a datanode and a namenode folder. Then apply the following modifications to the configuration files in `.\etc\hadoop\`.
+
+In `core-site.xml`
+~~~
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9000</value>
+  </property>
+</configuration>
+~~~
+
+In `mapred-site.xml`
+~~~
+<configuration>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+</configuration>
+~~~
+
+In `hdfs-site.xml`
+~~~
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>C:\twitter\hadoop-3.1.0\data\namenode</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>C:\twitter\hadoop-3.1.0\data\datanode</value>
+  </property>
+</configuration>
+~~~
+
+In `yarn-site.xml`
+~~~
+<configuration>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name>  
+    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+  </property>
+</configuration>
+~~~
