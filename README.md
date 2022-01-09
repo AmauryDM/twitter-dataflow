@@ -4,7 +4,7 @@
 
 This project aims at setting up an application of Big Data from start to end. It is inspired by a [Hortonworks Tutorial](https://github.com/hortonworks/data-tutorials/blob/master/tutorials/cda/building-a-sentiment-analysis-application/tutorial-0.md) for Data Engineers and Data Scientist to use multiple Big Data technologies provided by Apache. The final application is a Real-Time Sentiment Analysis Application installed on a Windows 10 machine. The application acquires real-time data generated on the Twitter feed via the API, filters it to pass it through a Deep Learning sentilent analysis model and finally stores the analyzed data into a database. More information can be found on the original tutorial that is adapted here in order to bypass the use of the Hortonworks Sandbox. 
 
-### Big Data technologies used
+## Big Data technologies used
 
 This is a list of the technologies that are involved in the application with the version used and the link to the installation kit.
 
@@ -17,10 +17,16 @@ This is a list of the technologies that are involved in the application with the
 
 The Twitter API is the exception that requires to sign up to the Elevated access. Indeed, the NiFi software in charge of generating the dataflow uses the v1.1 endpoint that only comes with this particular access.
 
-### Objectives
+## Objectives
 
 - Create a Twitter Application using Twitter's Developer Portal to get KEYS and TOKENS for connecting to Twitter API v1.1 endpoint
 - Create a NiFi Dataflow Application that integrates Twitter's Decahose API to ingest tweets, perform preprocessing and store the data into a Kafka Topic "tweets"
 - Install a Python Deep Learning algorithm for Natural Language Processing to classify text tweets in Positive/Negative and store the analyzed data into another Kafka Topic "tweetsSentiment"
 - Create a NiFi Dataflow Application that ingests the Kafka Topic "tweetsSentiment" to stream analyzed tweets data to a database
 - Visualize the tweet sentiments in a "tweets_sentiment" HBase table
+
+## Prerequisites
+
+- JDK 8 is installed and the JAVA_HOME path variable is set
+- Administrator rights on the machine
+- Project installed in the directory "C:/twitter/", changes may occur if the path is not exactly the same
