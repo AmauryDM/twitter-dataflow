@@ -16,3 +16,8 @@ The project is built for Windows 10 machine. That is, once the Python executable
 python --version
 ~~~
 
+Then, all the archive files can be downloaded and extracted in the `C:\twitter\` directory. To simplify the course of the tutorial, each software folder should not contain another folder but directly the useful files (bin folder is the first for example). With the installation done, it is possible to move on to the configuration.
+
+## NiFi
+
+When installed and extracted, NiFi can be directly run from the `C:\twitter\nifi-1.14.0\bin` directory by launching a Command Prompt window and executing the `run-nifi.bat` file. After that go to https://127.0.0.1:8443/nifi on a web browser. It should request for a username and password that can be found in the `.\logs\nifi-app.txt` file by searching for "generated username".
