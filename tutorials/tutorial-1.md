@@ -171,5 +171,7 @@ In `.\conf\hbase-site.xml`
 </configuration>
 ~~~
 
-To launch HBase, execute the `start-hbase.cmd` file in a Command Prompt window placed in the `.\bin folder`.
-
+To launch HBase, execute this line in a Command Prompt window placed in the `.\bin folder`.
+~~~
+start-hbase.cmd
+~~~
