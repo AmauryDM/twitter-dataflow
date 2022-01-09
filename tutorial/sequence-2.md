@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Now that all the softwares are installed and configured, it is possible to set up the environment of the system. The aim is to create the topics, database and install the Python packages that will be used to make the system work.
+Now that all the software are installed and configured, it is possible to set up the environment of the system. The aim is to create the topics, database and install the Python packages that will be used to make the system work.
 
 ## Kafka Topic
 
@@ -23,7 +23,7 @@ bin/kafka-topics.sh --create --zookeeper localhost:2888 --replication-factor 1 -
 
 ## HBase Table
 
-Then, the goal is to create the database that will store the analyzed tweets. To do so, with HBase running, open a Command Prompt in the `.\bin\` folder and type this line that will open the builtin HBase interpreter. 
+Then, the goal is to create the database that will store the analyzed tweets. To do so, with HBase running, open a Command Prompt in the `.\bin\` folder and type this line that will open the built-in HBase interpreter. 
 ~~~
 hbase shell
 ~~~
