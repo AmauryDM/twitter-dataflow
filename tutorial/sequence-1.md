@@ -177,7 +177,7 @@ To launch HBase, execute this line in a Command Prompt window placed in the `.\b
 start-hbase.cmd
 ~~~
 
-## Outline
+## Further
 
 For more information on the installation and the configuration of the softwares, detailed guides can be found at the following addresses:
 - [NiFi](https://jd-bots.com/2021/08/22/installing-and-running-apache-nifi-on-windows-standalone/)
