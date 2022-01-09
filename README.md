@@ -1,4 +1,4 @@
-![system](images/system.png)
+![system](images/system.jpg)
 
 # Sentiment Analysis On Twitter Dataflow
 
