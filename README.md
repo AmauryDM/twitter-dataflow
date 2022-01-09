@@ -30,3 +30,7 @@ The Twitter API is the exception that requires to sign up to the Elevated access
 - JDK 8 is installed and the JAVA_HOME path variable is set (no spaces in the path recommended)
 - Administrator rights on the machine
 - Project installed in the directory "C:/twitter/", changes may occur if the path is not exactly the same
+
+## Tutorial sequence
+
+The README serves as an introduction to the project. In order to follow the installation and configuration of the application, one is invited to go through the different text files explaining step by step how to put it in place.
