@@ -21,3 +21,5 @@ In order to see the results, the group has to be launched from the NiFi canvas b
 As always, we can have a look at the data that is running through the pipeline with the "View data provenance" option in the right click. In the following example from the "ConsumerKafka" component, we can see the JSON file retrieved from the "tweetsSentiment" topic. We can see that this file has indeed the new attribute "sentiment" that is set to positive for this particular tweet.
 
 ![consumer](https://github.com/AmauryDM/twitter-dataflow/blob/main/images/consumer.png)
+
+Now that the tweets have the "sentiment" attribute, it is possible to check whether it is empty or not with the last component of the group and store them into the "tweets_sentiment" database.
