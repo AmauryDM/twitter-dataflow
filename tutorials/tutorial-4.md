@@ -29,4 +29,5 @@ python twitter.py
 
 When launched for the first time, the window will look like the following image. Indeed, the tokenizer is downloaded from the Hugging Face archives and installed locally. This action will not be reproduced for the next executions.
 
+![execution](https://github.com/AmauryDM/twitter-dataflow/blob/main/images/system.jpg)
 
