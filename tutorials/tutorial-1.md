@@ -21,3 +21,32 @@ Then, all the archive files can be downloaded and extracted in the `C:\twitter\`
 ## NiFi
 
 When installed and extracted, NiFi can be directly run from the `C:\twitter\nifi-1.14.0\bin` directory by launching a Command Prompt window and executing the `run-nifi.bat` file. After that go to https://127.0.0.1:8443/nifi on a web browser. It should request for a username and password that can be found in the `.\logs\nifi-app.txt` file by searching for "generated username".
+
+## Kafka
+
+Kafka needs to create a `C:\twitter\kafka_2.11-2.4.1\data\` folder containing a `kafka\` and a `zookeeper\` folder and apply the following modifications to the configuration files.
+
+In `.\config\zookeeper.properties`
+~~~
+dataDir=C:/twitter/kafka_2.11-2.4.1/data/zookeeper
+clientPort=2888
+~~~
+
+In `.\config\server.properties`
+~~~
+log.dirs=C:/twitter/kafka_2.11-2.4.1/data/kafka
+~~~
+
+To launch Zookeeper and Kafka, open two Git Bash windows in `C:\twitter\kafka_2.11-2.4.1\`. 
+
+In the first execute
+~~~
+bin/zookeeper-server-start.sh config/zookeeper.properties
+~~~
+
+In the second execute
+~~~
+bin/kafka-server-start.sh config/server.properties
+~~~
+
+Zookeeper is a server for highly reliable distributed coordination of applications to be able for Kafka to manage different feeds of data which is the case in the project.
