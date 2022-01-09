@@ -33,7 +33,7 @@ To launch the whole group, go back to the NiFi canvas by clicking on NiFi Flow a
 
 This is how we arrive now to the use of Kafka as a message manager. In fact, now the tweets are sent to the "tweets" Kafka topic. In order to process and perform complex operations on real time data, Kafka will help us to treat messages asynchronously.
 
-At any time in the NiFi process, it is possible to view the data that is passing through the pipeline. To do so, right click on any component and select "View data provenance". Then choose a line of data and click on the far right information button that will open a pop-up window. Select the "CONTENT" tab and ‘View’ on the Output Claim. Here is an example of data from the "PublishKafka" component.
+At any time in the NiFi process, it is possible to view the data that is passing through the pipeline. To do so, right click on any component and select "View data provenance". Then choose a line of data and click on the far right information button that will open a pop-up window. Select the "CONTENT" tab and "View" on the Output Claim. Here is an example of data from the "PublishKafka" component.
 
 ![output](https://github.com/AmauryDM/twitter-dataflow/blob/main/images/output.png)
 
