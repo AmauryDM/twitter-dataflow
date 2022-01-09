@@ -1,3 +1,5 @@
+![system](images/system.png)
+
 # Sentiment Analysis On Twitter Dataflow
 
 ## Introduction
