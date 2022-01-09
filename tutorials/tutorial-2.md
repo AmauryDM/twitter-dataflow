@@ -42,3 +42,5 @@ pip install confluent-kafka
 pip install tensorflow
 pip install transformers
 ~~~
+
+With these installations, the development environment is set up. Now, we have all the elements to put in place the dataflow and make everything work.
