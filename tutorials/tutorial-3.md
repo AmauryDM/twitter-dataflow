@@ -13,3 +13,12 @@ The canva should look as represented in the following image with the two groups 
 - StreamTweetsToHBase for post-processing
 
 ![groups](https://github.com/AmauryDM/twitter-dataflow/blob/main/images/groups.png)
+
+We will first focus on the pre-processing group and go through the components that are used for this project. It is possible to view them by clicking on the group. We obtain the following components on the canvas.
+
+| Component | Operation |
+| --- | --- |
+| GetTwitter | Connect to Twitter API v1.1 endpoint |
+| PullKeyAttributes | Filter on given attributes in the JSON file of the tweet |
+| FindOnlyTweets | Filter tweets that have a text attribute not empty |
+| PublishKafka | Connect as producer to the "tweets" topic in Kafka |
