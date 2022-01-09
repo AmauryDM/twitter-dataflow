@@ -6,7 +6,7 @@
 
 This project aims at setting up an application of Big Data from start to end. It is inspired by a [Hortonworks Tutorial](https://github.com/hortonworks/data-tutorials/blob/master/tutorials/cda/building-a-sentiment-analysis-application/tutorial-0.md) for Data Engineers and Data Scientist to use multiple Big Data technologies provided by Apache. The final application is a Real-Time Sentiment Analysis Application installed on a Windows 10 machine. The application acquires real-time data generated on the Twitter feed via the API, filters it to pass it through a Deep Learning sentilent analysis model and finally stores the analyzed data into a database. More information can be found on the original tutorial that is adapted here in order to bypass the use of the Hortonworks Sandbox. 
 
-## Big Data technologies used
+## Big Data technologies
 
 This is a list of the technologies that are involved in the application with the version used and the link to the installation kit.
 
@@ -33,13 +33,13 @@ The Twitter API is the exception that requires to sign up to the Elevated access
 - Administrator rights on the machine
 - Project installed in the directory `C:\twitter\`, changes may occur if the path is not exactly the same
 
-## Tutorial sequence
+## Tutorial sequences
 
 The README serves as an introduction to the project. In order to follow the installation and configuration of the application, one is invited to go through the different text files explaining step by step how to put it in place. This tutorial sequence contains the following modules:
 
-1. **[Software Configuration](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-1.md)**: Properly install the listed softwares and modify the configuration files
-2. **[Environment Set Up](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-2.md)**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
-3. **[Data Pre-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-3.md)**: Install the NiFi dataflow using the XML file and modify the Twitter connector with KEYS and TOKENS
-4. **[Sentiment Analysis](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-4.md)**: Launch the Python script to connect to the Kafka topics and analyze the tweets
-5. **[Data Post-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-5.md)**: Filter the data sended back by the Python script and store it to the HBase table
-6. **[Visualizing Data](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-6.md)**: Scan the HBase table to see the sentiment results
+1. **[Software Configuration](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/sequence-1.md)**: Properly install the listed softwares and modify the configuration files
+2. **[Environment Set Up](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/sequence-2.md)**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
+3. **[Data Pre-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/sequence-3.md)**: Install the NiFi dataflow using the XML file and modify the Twitter connector with KEYS and TOKENS
+4. **[Sentiment Analysis](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/sequence-4.md)**: Launch the Python script to connect to the Kafka topics and analyze the tweets
+5. **[Data Post-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/sequence-5.md)**: Filter the data sended back by the Python script and store it to the HBase table
+6. **[Visualizing Data](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/sequence-6.md)**: Scan the HBase table to see the sentiment results
