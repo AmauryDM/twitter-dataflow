@@ -35,9 +35,9 @@ The Twitter API is the exception that requires to sign up to the Elevated access
 
 The README serves as an introduction to the project. In order to follow the installation and configuration of the application, one is invited to go through the different text files explaining step by step how to put it in place. This tutorial sequence contains the following modules:
 
-1. **Software configuration**: Properly install the listed softwares and modify the configuration files
-2. **Environment set up**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
-3. **Data pre-processing**: Install the NiFi dataflow using the XML file and modify the Twitter connector with KEYS and TOKENS
-4. **Sentiment analysis**: Launch the Python script to connect to the Kafka topics and analyze the tweets
-5. **Data post-processing**: Filter the data sended back by the Python script and store it to the HBase table
-6. **Visualizing data**: Scan the HBase table to see the sentiment results
+1. **[Software Configuration](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-1.md)**: Properly install the listed softwares and modify the configuration files
+2. **[Environment Set Up](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-2.md)**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
+3. **[Data Pre-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-3.md)**: Install the NiFi dataflow using the XML file and modify the Twitter connector with KEYS and TOKENS
+4. **[Sentiment Analysis](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-4.md)**: Launch the Python script to connect to the Kafka topics and analyze the tweets
+5. **[Data Post-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-5.md)**: Filter the data sended back by the Python script and store it to the HBase table
+6. **[Visualizing Data](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/tutorial-6.md)**: Scan the HBase table to see the sentiment results
