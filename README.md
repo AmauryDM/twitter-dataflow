@@ -35,9 +35,9 @@ The Twitter API is the exception that requires to sign up to the Elevated access
 
 The README serves as an introduction to the project. In order to follow the installation and configuration of the application, one is invited to go through the different text files explaining step by step how to put it in place. This tutorial sequence contains the following modules:
 
-1. **Configuration of the softwares**: Properly install the listed softwares and modify the configuration files
-2. **Setting up the environment**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
+1. **Software configuration**: Properly install the listed softwares and modify the configuration files
+2. **Environment set up**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
 3. **Data pre-processing**: Install the NiFi dataflow using the XML file and modify the Twitter connector with KEYS and TOKENS
 4. **Sentiment analysis**: Launch the Python script to connect to the Kafka topics and analyze the tweets
 5. **Data post-processing**: Filter the data sended back by the Python script and store it to the HBase table
-6. **Visualizing analyzed data**: Scan the HBase table to see the sentiment results
+6. **Visualizing data**: Scan the HBase table to see the sentiment results
