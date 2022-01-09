@@ -33,6 +33,6 @@ When launched for the first time, the window will look like the following image.
 
 Then, we can see the summary of the Deep Learning model that was used. It shows that the file was successfully loaded and can be used for sentiment analysis. After that, the message "Listening" appears showing that Python has connected the consumer to the "tweets" topic and waits for the messages from NiFi.
 
-In the next images, we can see that messages are received by the Python consumer and analyzed by the model. Thus, the following pieces of information are displayed: the text of the tweet, the sentiment associated and the message saying the new JSON file has been successfully sent to the "tweetsSentiment" topic.
+In the next images, we can see that messages are received by the Python consumer and analyzed by the model. Thus, the following pieces of information are displayed: the text of the tweet, the sentiment associated and the message saying the new JSON file has been successfully sent to the "tweetsSentiment" topic
 
 ![listening](https://github.com/AmauryDM/twitter-dataflow/blob/main/images/listening.png)
