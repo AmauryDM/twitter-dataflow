@@ -10,7 +10,7 @@ This is a list of the technologies that are involved in the application with the
 
 - [Twitter API v1.1](https://developer.twitter.com/en): Programmatic access to Twitter
 - [Python 3.8.5](https://www.python.org/ftp/python/3.8.5/python-3.8.5.exe): Interpreted high-level general-purpose programming language
-- [Apache NiFi](https://archive.apache.org/dist/nifi/1.14.0/nifi-1.14.0-bin.zip): Software project to automate the flow of data between software systems
+- [Apache NiFi 1.14.0](https://archive.apache.org/dist/nifi/1.14.0/nifi-1.14.0-bin.zip): Software project to automate the flow of data between software systems
 - [Apache Kafka 2.4.1 - Scala 2.11](https://archive.apache.org/dist/kafka/2.4.1/kafka_2.11-2.4.1.tgz): Distributed event streaming platform for handling real-time data feeds
 - [Apache Hadoop 3.1.0 - HDFS](https://archive.apache.org/dist/hadoop/common/hadoop-3.1.0/hadoop-3.1.0.tar.gz): Distributed file-system that stores data on commodity machines
 - [Apache HBase 2.2.5](https://archive.apache.org/dist/hbase/2.2.5/hbase-2.2.5-bin.tar.gz): Non-relational distributed database
