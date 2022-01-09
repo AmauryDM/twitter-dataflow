@@ -20,7 +20,7 @@ In this project, the attributes that are kept in the database for better readabi
 
 ## Final result in HBase
 
-To check the result in HBase, go to the `hbase shell` window that is opened from the creation of the database and execute the following command.
+To check the result in HBase, go to the HBase shell window that is opened from the creation of the database and execute the following command.
 ~~~
 scan 'tweets_sentiment'
 ~~~
