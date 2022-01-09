@@ -8,6 +8,25 @@ We use the Confluent Python library in order to connect to Kafka using a Python 
 
 ## Code review
 
-The script `twitter.py` and the file `model model_emb256_dp4_lstm128_v4.h5` are available in the `application\` folder of the repository. Thus, the script can be explained as follows. We first create a consumer for the "tweets" topic and a producer for the "tweetsSentiment" topic.
+The script `twitter.py` and the file `model model_emb256_dp4_lstm128_v4.h5` are available in the `application\` folder of the repository. Thus, the script can be explained as follows. We first create a consumer for the "tweets" topic and a producer for the "tweetsSentiment" topic thanks to the information provided by Kafka.
+
+Then, the steps are executed:
+- The tokenizer used for the Deep Learning model is loaded
+- The model is loaded
+- An infinite loop is initiated to listen to the messages sent to the "tweets" topic and when a message is received
+  - The consumer loads the message and the script cleans it from unwanted string of characters such as "RT" when it is a retweet or "@" when someone is mentioned
+  - It verifies the message language is correctly labeled as English
+  - It performs the prediction on the text
+  - It adds a new attribute ‘sentiment’ to the JSON that was loaded with the result of the analysis either Positive or Negative
+  - The producer sends the message asynchronously to the "tweetsSentiment" topic in Kafka via the producer
 
 ## Code execution
+
+Finally, to launch the script, open a command prompt window in the directory with the Python files and execute the following command.
+~~~
+python twitter.py
+~~~
+
+When launched for the first time, the window will look like the following image. Indeed, the tokenizer is downloaded from the Hugging Face archives and installed locally. This action will not be reproduced for the next executions.
+
+
