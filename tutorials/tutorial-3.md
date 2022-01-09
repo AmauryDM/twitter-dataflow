@@ -12,4 +12,4 @@ The canva should look as represented in the following image with the two groups 
 - AcquireTwitterData for pre-processing
 - StreamTweetsToHBase for post-processing
 
-![groups](images/groups.png)
+![groups](https://github.com/AmauryDM/twitter-dataflow/tree/main/images/groups.PNG)
