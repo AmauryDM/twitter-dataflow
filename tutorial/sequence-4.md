@@ -17,7 +17,7 @@ Then, the steps are executed:
   - The consumer loads the message and the script cleans it from unwanted string of characters such as "RT" when it is a retweet or "@" when someone is mentioned
   - It verifies the message language is correctly labeled as English
   - It performs the prediction on the text
-  - It adds a new attribute ‘sentiment’ to the JSON that was loaded with the result of the analysis either Positive or Negative
+  - It adds a new attribute "sentiment" to the JSON that was loaded with the result of the analysis either Positive or Negative
   - The producer sends the message asynchronously to the "tweetsSentiment" topic in Kafka via the producer
 
 ## Code execution
