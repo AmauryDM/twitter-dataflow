@@ -13,7 +13,7 @@ With the installation of the whole dataflow done in the [Sequence 3](https://git
 | ConsumerKafka | Retrieve the analyzed tweets in the "tweetsSentiment" topic |
 | PullKeyAttributes | Filter on specific attributes especially "sentiment" |
 | AttributesToJSON | Make sure the format of the file is JSON with the correct attributes |
-| IfTweetsHaveSentimentAndTime | Filter tweets that have a time stamp and the attribute "sentiment’" not empty |
+| IfTweetsHaveSentimentAndTime | Filter tweets that have a time stamp and the attribute "sentiment" non-empty |
 | PutHBaseJSON | Connect to the HBase client in the "tweets_sentiment" database created with the "social_media_sentiment" key associated |
 
 In order to see the results, the group has to be launched from the NiFi canvas by selecting and pressing the play button on the "Operate panel". When the green play button appears, data from the "tweetsSentiment" topic is received and filtered then directly sent to HBase if the requirements are respected.
