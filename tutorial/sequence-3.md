@@ -20,7 +20,7 @@ We will first focus on the pre-processing group and go through the components th
 | --- | --- |
 | GetTwitter | Connect to Twitter API v1.1 endpoint |
 | PullKeyAttributes | Filter on given attributes in the JSON file of the tweet |
-| FindOnlyTweets | Filter tweets that have a text attribute not empty |
+| FindOnlyTweets | Filter tweets that have a text attribute non-empty |
 | PublishKafka | Connect as producer to the "tweets" topic in Kafka |
 
 The only component that requires modification is the first: "GetTwitter". Indeed, it has to be adapted to the Twitter project linked. We have the properties presented in this image.
