@@ -175,3 +175,11 @@ To launch HBase, execute this line in a Command Prompt window placed in the `.\b
 ~~~
 start-hbase.cmd
 ~~~
+
+## Outline
+
+For more information on the installation and the configuration of the softwares, detailed guides can be found at the following addresses:
+- [NiFi](https://jd-bots.com/2021/08/22/installing-and-running-apache-nifi-on-windows-standalone/)
+- [Kafka](https://www.goavega.com/install-apache-kafka-on-windows/)
+- [Hadoop](https://www.datasciencecentral.com/profiles/blogs/how-to-install-and-run-hadoop-on-windows-for-beginners)
+- [HBase](https://www.learntospark.com/2020/08/setup-hbase-in-windows.html)
