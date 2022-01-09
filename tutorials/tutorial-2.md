@@ -11,3 +11,34 @@ We can first open a Git Bash window in the Kafka directory and execute the follo
 - "tweets" that that will contain the raw data from Twitter
 - "tweetsSentiment" that will contain the sentiment analysis attribute
 
+To create the "tweets" topic
+~~~
+bin/kafka-topics.sh --create --zookeeper localhost:2888 --replication-factor 1 --partitions 10 --topic tweets
+~~~
+
+To create the "tweetsSentiment" topic
+~~~
+bin/kafka-topics.sh --create --zookeeper localhost:2888 --replication-factor 1 --partitions 10 --topic tweetsSentiment
+~~~
+
+## HBase Table
+
+Then, the goal is to create the database that will store the analyzed tweets. To do so, with HBase running, open a Command Prompt in the `.\bin\` folder and type this line that will open the builtin HBase interpreter. 
+~~~
+hbase shell
+~~~
+
+Type the following command that will create the database with its corresponding key.
+~~~
+create 'tweets_sentiment', 'social_media_sentiment'
+~~~
+
+## Python Libraries
+
+Finally, we need to install the Python libraries used by the script in order to perform sentiment analysis on the tweets with the Deep Learning model developed. If Python is well installed with the environment variable set, the installation of the required libraries consists in the following commands.
+~~~
+pip install numpy
+pip install confluent-kafka
+pip install tensorflow
+pip install transformers
+~~~
