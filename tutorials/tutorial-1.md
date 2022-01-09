@@ -106,3 +106,24 @@ In `yarn-site.xml`
   </property>
 </configuration>
 ~~~
+
+To make Hadoop run on Windows, it needs other utilities. They can be downloaded at the following address for 3.1.0 https://github.com/s911415/apache-hadoop-3.1.0-winutils and replace the actual bin folder by deleting it or renaming it. The success of the installation can be verified by executing in a Command Prompt window.
+~~~
+hadoop version
+~~~
+
+In that case, first in a Command Prompt, execute the line.
+~~~
+hdfs namenode -format
+~~~
+
+Then in another window in the `C:\twitter\hadoop-3.1.0\sbin\` folder, execute the following command that will launch Hadoop. 
+~~~
+start-dfs.cmd
+~~~
+
+It is only used in order to run HBase that allows us to create a database for the project.
+
+
+## HBase
+
