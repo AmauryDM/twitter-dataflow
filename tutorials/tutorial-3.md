@@ -24,3 +24,15 @@ We will first focus on the pre-processing group and go through the components th
 | PublishKafka | Connect as producer to the "tweets" topic in Kafka |
 
 The only component that requires modification is the first: "GetTwitter". Indeed, it has to be adapted to the Twitter project linked. We have the properties presented in this image.
+
+![properties](https://github.com/AmauryDM/twitter-dataflow/blob/main/images/properties.png)
+
+The first property allows us to specify that the data which will be queried from Twitter is a random sample of the real time Twitter feed. Then, we need to specify the different keys from the Twitter developer account. Indeed, to connect to Twitter, we need a project from the developer account that gives Consumer Key, Consumer Secret, Access Token and Access Token Secret. After that, the configuration of the pre-processing group is done. 
+
+To launch the whole group, go back to the NiFi canvas by clicking on NiFi Flow at the bottom left corner. Then click on "AcquireTwitterData" and press the play button on the left "Operate panel". The red stop button will turn to a green play button meaning the data flow is launched. At this stage, Twitter is queried and data is retrieved, filtered and directly sent to the Kafka topic.
+
+This is how we arrive now to the use of Kafka as a message manager. In fact, now the tweets are sent to the "tweets" Kafka topic. In order to process and perform complex operations on real time data, Kafka will help us to treat messages asynchronously.
+
+At any time in the NiFi process, it is possible to view the data that is passing through the pipeline. To do so, right click on any component and select "View data provenance". Then choose a line of data and click on the far right information button that will open a pop-up window. Select the "CONTENT" tab and ‘View’ on the Output Claim. Here is an example of data from the "PublishKafka" component.
+
+![output](https://github.com/AmauryDM/twitter-dataflow/blob/main/images/output.png)
