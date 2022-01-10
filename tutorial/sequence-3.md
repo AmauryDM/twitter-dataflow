@@ -6,7 +6,7 @@ In this part, we explain how NiFi works, why it is used and how we use it in the
 
 ## Install NiFi dataflow
 
-In order to install the whole dataflow configured and used for this project, we can use the [`flow.xml`](https://github.com/AmauryDM/twitter-dataflow/blob/main/files/flow.xml) file contained in the `files/` folder of the repository of the project. All that needs to be done is right click in the NiFi canva and type "Upload template" to select the file.
+In order to install the whole dataflow configured and used for this project, we can use the [`TwitterDataflow.xml`](https://github.com/AmauryDM/twitter-dataflow/blob/main/files/TwitterDataflow.xml) file contained in the `files/` folder of the repository of the project. All that needs to be done is right click in the NiFi canva and type "Upload template" to select the file.
 
 The canva should look as represented in the following image with the two groups used for the project. The groups are divided as follows:
 - AcquireTwitterData for pre-processing
