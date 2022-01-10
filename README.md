@@ -35,7 +35,7 @@ The Twitter API is the exception that requires to sign up to the Elevated access
 
 ## Tutorial sequences
 
-The README serves as an introduction to the project. In order to follow the installation and configuration of the application, one is invited to go through the different text files explaining step by step how to put it in place. This tutorial sequence contains the following modules:
+The README serves as an introduction to the project. In order to follow the installation and configuration of the application, one is invited to go through the different markdown files explaining step by step how to put it in place. This tutorial contains the following sequences:
 
 1. **[Software Configuration](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-1.md)**: Properly install the listed software and modify the configuration files
 2. **[Environment Set Up](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-2.md)**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
