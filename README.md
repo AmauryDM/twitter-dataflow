@@ -39,7 +39,7 @@ The README serves as an introduction to the project. In order to follow the inst
 
 1. **[Software Configuration](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-1.md)**: Properly install the listed software and modify the configuration files
 2. **[Environment Set Up](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-2.md)**: Create the Kafka topics, the HBase table and install the Python libraries to run the script
-3. **[Data Pre-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-3.md)**: Install the NiFi dataflow using the XML file and modify the Twitter connector with KEYS and TOKENS
+3. **[Data Pre-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-3.md)**: Install the NiFi dataflow using the XML file and modify the Twitter connector
 4. **[Sentiment Analysis](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-4.md)**: Launch the Python script to connect to the Kafka topics and analyze the tweets
 5. **[Data Post-processing](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-5.md)**: Filter the data sended back by the Python script and store it to the HBase table
 6. **[Visualizing Data](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-6.md)**: Scan the HBase table to see the sentiment results
