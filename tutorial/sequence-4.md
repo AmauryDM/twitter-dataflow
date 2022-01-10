@@ -8,7 +8,7 @@ We use the Confluent Python library in order to connect to Kafka using a Python 
 
 ## Code review
 
-The script [`twitter.py`](https://github.com/AmauryDM/twitter-dataflow/blob/main/files/twitter.py) and the file [`model model_emb256_dp4_lstm128_v4.h5`](https://github.com/AmauryDM/twitter-dataflow/blob/main/files/model model_emb256_dp4_lstm128_v4.h5) are available in the `files/` folder of the repository. Thus, the script can be explained as follows. We first create a consumer for the "tweets" topic and a producer for the "tweetsSentiment" topic thanks to the information provided by Kafka.
+The script [`twitter.py`](https://github.com/AmauryDM/twitter-dataflow/blob/main/files/twitter.py) and the file [`model model_emb256_dp4_lstm128_v4.h5`](https://github.com/AmauryDM/twitter-dataflow/blob/main/files/model_emb256_dp4_lstm128_v4.h5) are available in the `files/` folder of the repository. Thus, the script can be explained as follows. We first create a consumer for the "tweets" topic and a producer for the "tweetsSentiment" topic thanks to the information provided by Kafka.
 
 Then, the steps are executed:
 - The tokenizer used for the Deep Learning model is loaded
