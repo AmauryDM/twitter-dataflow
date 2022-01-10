@@ -6,7 +6,7 @@ Now that we have data sent to the "tweetsSentiment" topic, we can retrieve it an
 
 ## NiFi post-processing group
 
-With the installation of the whole dataflow done in the [Sequence 3](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorials/sequence-3.md), we can have a look at this other group to explain how it works and what to modify depending on the needs. We have the following components and the operation associated.
+With the installation of the whole dataflow done in the [Sequence 3](https://github.com/AmauryDM/twitter-dataflow/blob/main/tutorial/sequence-3.md), we can have a look at this other group to explain how it works and what to modify depending on the needs. We have the following components and the operation associated.
 
 | Component | Operation |
 | --- | --- |
