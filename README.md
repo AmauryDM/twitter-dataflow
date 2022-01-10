@@ -22,7 +22,7 @@ The Twitter API is the exception that requires to sign up to the Elevated access
 ## Objectives
 
 - Create a Twitter Application using Twitter's Developer Portal to get KEYS and TOKENS for connecting to Twitter API v1.1 endpoint
-- Create a NiFi Dataflow Application that integrates Twitter's Decahose API to ingest tweets, perform preprocessing and store the data into a Kafka Topic "tweets"
+- Create a NiFi Dataflow Application that integrates Twitter's Decahose API to ingest tweets, perform pre-processing and store the data into a Kafka Topic "tweets"
 - Install a Python Deep Learning algorithm for Natural Language Processing to classify text tweets in Positive/Negative and store the analyzed data into another Kafka Topic "tweetsSentiment"
 - Create a NiFi Dataflow Application that ingests the Kafka Topic "tweetsSentiment" to stream analyzed tweets data to a database
 - Visualize the tweet sentiments in a "tweets_sentiment" HBase table
