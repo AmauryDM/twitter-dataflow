@@ -53,7 +53,7 @@ try:
     print("Tokenizer loaded")
     print("")
     print("Loading model")
-    model = tf.keras.models.load_model('model_emb256_dp4_lstm128_v4.h5')
+    model = tf.keras.models.load_model('model_emb256_dp4_lstm128_v3.h5')
     model.summary()
     print("Model loaded")
     print("")
