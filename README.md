@@ -4,7 +4,9 @@
 
 ## Introduction
 
-This project aims at setting up an application of Big Data from start to end. It is inspired by a [Hortonworks Tutorial](https://github.com/hortonworks/data-tutorials/blob/master/tutorials/cda/building-a-sentiment-analysis-application/tutorial-0.md) for Data Engineers and Data Scientist to use multiple Big Data technologies provided by Apache. The final application is a Real-Time Sentiment Analysis Application installed on a Windows 10 machine. The application acquires real-time data generated on the Twitter feed via the API, filters it to pass it through a Deep Learning sentilent analysis model and finally stores the analyzed data into a database. More information can be found on the original tutorial that is adapted here in order to bypass the use of the Hortonworks Sandbox. 
+Associate Professor at the engineering school of ISEP, Paris, where she is currently the Head of the Software Engineering major
+
+This project aims at setting up an application of Big Data from start to end under the supervision of ISEP Associate Professor in Software Engineering [Shohreh Ahvar](https://github.com/shohrehahvar). It is inspired by a [Hortonworks Tutorial](https://github.com/hortonworks/data-tutorials/blob/master/tutorials/cda/building-a-sentiment-analysis-application/tutorial-0.md) for Data Engineers and Data Scientist to use multiple Big Data technologies provided by Apache. The final application is a Real-Time Sentiment Analysis Application installed on a Windows 10 machine. The application acquires real-time data generated on the Twitter feed via the API, filters it to pass it through a Deep Learning sentilent analysis model and finally stores the analyzed data into a database. More information can be found on the original tutorial that is adapted here in order to bypass the use of the Hortonworks Sandbox. 
 
 ## Big Data technologies
 
